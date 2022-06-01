@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+{% load static %}
+{% block movies_block %}
+
+<a class="text-white bg-dark" href="/movies/add-schedule">AGREGA UN HORARIOOOO!!</a>
+
+<ul>
+    {% for calendario in calendario %}
+    <li>
+        <h4 style="color:coral">Día: {{calendario.horario}} -- Película: {{calendario.pelicula}} -- 
+        Codigo de reserva: {{calendario.code}} -- Sala de la pelicula: {{calendario.sala}}</h4>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

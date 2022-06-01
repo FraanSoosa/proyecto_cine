@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+{% load static %}
+{% block movies_block %}
+
+<a class="text-white bg-dark" href="/movies/add-rooms">AGREGA UNA SALAAA!!</a>
+<ul>
+    {% for room in rooms %}
+    <li>
+        <h4 style="color: orange"> Número de sala: {{room.number}} -- Codigo: {{room.code}}</h4>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

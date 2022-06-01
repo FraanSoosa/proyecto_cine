@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    {% load static %}
+
+    
+    <!-- Favicon-->
+    <link rel="itype="image/x-icon" href="{% static 'app_coder/assets/favicon.ico' %}" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"
+        type="text/css" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{% static 'app_coder/css/styles.css' %}" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-light bg-light static-top">
+        
+        <div class="container"> 
+
+            <a class="navbar-brand" href="/movies/promotions">¡¡PROMOS EXCLUSIVAS!!</a>
+            <a class="navbar-brand" href="/movies">PELICULAS</a>
+            <a class="navbar-brand" href="/movies/schedule">HORARIOS</a>
+            <a class="navbar-brand" href="/movies/rooms">SALAS</a>
+
+
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-xl-12">
+                    <div class="text-center text-red">
+                        <!-- Page heading-->
+                        
+                        <h1 class="mb-15"><h2 style="color: rgb(255, 251, 0)"> CINE IMAX GOLDEN<br></h1>
+                        <h2 style="color: rgb(189, 20, 20)">
+                        ¡¡UNICO CON 10 SALAS 3D y 4D para una experiencia unica!!<br></h4> 
+                        
+                        <div class="text-lg-start text-red">
+                            <CEnter><img src="https://4.bp.blogspot.com/-B5xTyxMWhSU/UecouaxnHVI/AAAAAAAAF58/FsiGHaUuFm4/s1600/404_cines-3D-01.jpg" alt=""><LEgend></LEgend>
+
+                            </CEnter>
+                            {% block movies_block %}
+
+                            {% endblock %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    
+    <!-- Footer-->
+    <footer class="footer bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
+                    <ul class="list-inline mb-2">
+                        <li class="list-inline-item"><a href="#!">About</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="#!">Contact</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="#!">Terms of Use</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="#!">Privacy Policy</a></li>
+                    </ul>
+                    <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2022. All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item me-4">
+                            <a href="#!"><i class="bi-facebook fs-3"></i>https://es-la.facebook.com/cinesshowcase/</a>
+                        </li>
+                        <li class="list-inline-item me-4">
+                            <a href="#!"><i class="bi-twitter fs-3"></i>https://twitter.com/cinesshowcase</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#!"><i class="bi-instagram fs-3"></i>https://www.instagram.com/cinesshowcase/?hl=es</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="{% static 'app_coder/js/scripts.js' %}"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+<h2>Cines
+    Showcase Belgrano -
+    Showcase Norcenter -
+    Showcase Haedo -
+    Showcase Rosario -
+    IMAX Theatre<hr></hr>
+</html>

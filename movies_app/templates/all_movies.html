@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+{% load static %}
+{% block movies_block %}
+<a class="navbar-brand" href="/movies/add-movie">AGREGA UNA PELIIIII!!</a>
+<ul>
+    {% for movie in movies %}
+    <li>
+        <h4 style="color: orange"> Pelicula: {{movie.name}} -- 
+            Codigo: {{movie.code}} -- Sala: {{movie.sala}} </h4>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

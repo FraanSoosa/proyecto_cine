@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+{% load static %}
+{% block movies_block %}
+<a class="navbar-brand" href="/movies/add-promociones">AGREGA UNA PROMOCION!!</a>
+<ul>
+    {% for promotion in promotions %}
+    <li>
+        <h4 style="color: orange">$ {{promotion.precio}} -- 
+        Codigo: {{promotion.code}}</h4> {{promotion.descripcion}}
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
